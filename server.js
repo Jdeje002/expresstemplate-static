@@ -12,6 +12,9 @@ app.use(bodyparser.urlencoded({extended: true}))
 app.use(bodyparser.json())
 
 // your code here...
+app.get('/something',function(req,res){
+  res.send('hello')
+})
 
 var PORT = process.env.PORT || 3000
 // listening port
